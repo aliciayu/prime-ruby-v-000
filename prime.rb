@@ -1,9 +1,9 @@
 # Add  code here!
 def prime?(num)
-  (2..Math.sqrt(num)).each { |i|
-  if num % i == 0 && i < num
-    return false
+  return false if self <= 1
+    2.upto(Math.sqrt(self).to_i) do |x|
+      return false if self%x == 0
+    end
+    true
   end
-  }
-  true
 end
