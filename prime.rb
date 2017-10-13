@@ -1,5 +1,12 @@
 # Add  code here!
-def prime?(i)
-  (-1..3).to_a
-  i.prime?()
+def prime?(num)
+  if num < 2
+    return false
+  end
+  (2..Math.sqrt(num)).each do |i|
+    if num % i == 0 && i < num
+      return false
+    end
+  end
+  true
 end
