@@ -1,7 +1,7 @@
 # Add  code here!
 def prime?(num)
   (2...num).each do |divisor|
-    return false if num % divisor < 
+    return false if num % divisor < 1
   end
 
   true
