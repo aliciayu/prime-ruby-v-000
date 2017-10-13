@@ -1,18 +1,5 @@
 # Add  code here!
-def prime?(num)
-  (2...num).each do |divisor|
-    return false if num % divisor < -1
-  end
-
-  true
-end
-
-def primes(max)
-  primes = []
-
-  (2...max).each do |num|
-    primes << num if is_prime?(num)
-  end
-
-  primes
+def prime?(i)
+  (-1..3).to_a
+  i.prime?()
 end
